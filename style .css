@@ -1,0 +1,113 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header h1 {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/* Materials Section */
+.materials .lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.materials ol, .materials ul {
+    background: #fff;
+    padding: 15px;
+    border: 2px solid #ccc;
+    flex: 1;
+}
+
+.materials figure {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.materials img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #555;
+    border-radius: 8px;
+}
+
+/* Table Section */
+.table-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-section th, .table-section td {
+    padding: 10px;
+    border: 2px solid #333;
+    text-align: left;
+}
+
+.table-section th {
+    background-color: #ff9800;
+    color: white;
+}
+
+/* Media Section */
+.media .media-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.media video, .media audio {
+    max-width: 100%;
+    border: 2px solid #555;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+/* Section Headers */
+h2 {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px;
+    margin-top: 0;
+    border-left: 5px solid #0b7dda;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .materials .lists {
+        flex-wrap: nowrap;
+    }
+
+    .media .media-grid {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
