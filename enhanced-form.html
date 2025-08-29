@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medical School Assignment</title>
+</head>
+<body>
+  <h1>Medical School</h1>
+
+  <!-- Lists -->
+  <h2>Core Competencies</h2>
+  <ul>
+    <li>Clinical reasoning</li>
+    <li>Patient communication</li>
+    <li>Professionalism</li>
+  </ul>
+
+  <!-- Table -->
+  <h2>Lab Schedule</h2>
+  <table border="1">
+    <tr><th>Day</th><th>Topic</th><th>Instructor</th></tr>
+    <tr><td>Mon</td><td>Thorax</td><td>Dr. Lee</td></tr>
+    <tr><td>Wed</td><td>Abdomen</td><td>Dr. Singh</td></tr>
+  </table>
+
+  <!-- Media -->
+  <h2>Media</h2>
+  <img src="https://via.placeholder.com/200" alt="Medical students" width="200">
+  <br>
+  <audio controls>
+    <source src="https://samplelib.com/lib/preview/mp3/sample-3s.mp3" type="audio/mpeg">
+  </audio>
+  <br>
+  <video width="250" controls>
+    <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+  </video>
+
+  <!-- Form -->
+  <h2>Application Form</h2>
+  <form>
+    <fieldset>
+      <legend>Personal Info</legend>
+      <label>First Name: <input type="text" name="fname" required></label><br>
+      <label>Email: <input type="email" name="email" required></label><br>
+      <label>Phone: <input type="tel" name="phone" pattern="[0-9+ ]{7,}" required></label>
+    </fieldset>
+    <fieldset>
+      <legend>Academic Info</legend>
+      <label>GPA: <input type="number" min="0" max="4" step="0.01" required></label><br>
+      <label>Password: <input type="password" minlength="6" required></label>
+    </fieldset>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
